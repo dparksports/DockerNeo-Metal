@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/master.swiftdeps"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/AppDelegate.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/IconManager.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager.dia"
+  },
+  "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift": {
+    "dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.d",
+    "object": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.swift.o",
+    "swiftmodule": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.swiftdeps",
+    "diagnostics": "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.dia"
+  }
+}
