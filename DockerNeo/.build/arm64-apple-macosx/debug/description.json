@@ -3,7 +3,20 @@
 
   ],
   "copyCommands" : {
-
+    "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo_DockerNeo.bundle/Shaders.metal" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/Shaders.metal"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo_DockerNeo.bundle/Shaders.metal"
+        }
+      ]
+    }
   },
   "explicitTargetDependencyImportCheckingMode" : {
     "none" : {
@@ -28,19 +41,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift"
+          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockRenderer.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift"
+          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockView.swift"
         },
         {
           "kind" : "file",
@@ -52,7 +61,15 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<DockerNeo-arm64-apple-macosx26.0-debug.module-resources>"
         },
         {
           "kind" : "file",
@@ -64,12 +81,12 @@
       "moduleOutputPath" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/Modules/DockerNeo.swiftmodule",
       "objects" : [
         "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/AppDelegate.swift.o",
-        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.swift.o",
         "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.swift.o",
-        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.swift.o",
-        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.swift.o",
+        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockRenderer.swift.o",
+        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockView.swift.o",
         "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/IconManager.swift.o",
-        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.swift.o"
+        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.swift.o",
+        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/resource_bundle_accessor.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -84,7 +101,7 @@
         "-j10",
         "-DSWIFT_PACKAGE",
         "-DDEBUG",
-        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
         "-module-cache-path",
         "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
@@ -135,19 +152,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.swift.o"
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockRenderer.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.swift.o"
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockView.swift.o"
         },
         {
           "kind" : "file",
@@ -159,18 +172,22 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/Modules/DockerNeo.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
         "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/AppDelegate.swift",
-        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift",
         "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift",
-        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift",
-        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift",
+        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockRenderer.swift",
+        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockView.swift",
         "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/IconManager.swift",
-        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift"
+        "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift",
+        "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DerivedSources/resource_bundle_accessor.swift"
       ],
       "tempsPath" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build",
       "wholeModuleOptimization" : false
@@ -188,12 +205,12 @@
       "dockerneo",
       "-c",
       "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/AppDelegate.swift",
-      "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift",
       "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift",
-      "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift",
-      "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift",
+      "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockRenderer.swift",
+      "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockView.swift",
       "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/IconManager.swift",
       "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift",
+      "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DerivedSources/resource_bundle_accessor.swift",
       "-I",
       "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/Modules",
       "-target",
@@ -208,7 +225,7 @@
       "-j10",
       "-DSWIFT_PACKAGE",
       "-DDEBUG",
-      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
       "-module-cache-path",
       "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
@@ -298,19 +315,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift"
+          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockRenderer.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift"
+          "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockView.swift"
         },
         {
           "kind" : "file",
@@ -319,6 +332,10 @@
         {
           "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DerivedSources/resource_bundle_accessor.swift"
         }
       ],
       "outputFilePath" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/sources"
@@ -336,19 +353,15 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockCapturer.swift.o"
-        },
-        {
-          "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockItem.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/FloatingWindow.swift.o"
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockRenderer.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/HeightMapView.swift.o"
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DockView.swift.o"
         },
         {
           "kind" : "file",
@@ -357,6 +370,10 @@
         {
           "kind" : "file",
           "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/resource_bundle_accessor.swift.o"
         }
       ],
       "outputFilePath" : "/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.product/Objects.LinkFileList"

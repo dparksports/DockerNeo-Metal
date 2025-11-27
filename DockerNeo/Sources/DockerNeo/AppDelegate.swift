@@ -1,72 +1,59 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    var window: FloatingWindow!
-    var heightMapView: HeightMapView!
+    var window: NSWindow!
+    var dockView: DockView!
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        // Create the window
-        let screenRect = NSScreen.main?.frame ?? NSRect(x: 0, y: 0, width: 800, height: 600)
-        let windowWidth: CGFloat = 800
-        let windowHeight: CGFloat = 200
+        print("1. applicationDidFinishLaunching started")
+        
+        // Create window
+        let screen = NSScreen.main!
         let windowRect = NSRect(
-            x: (screenRect.width - windowWidth) / 2,
-            y: (screenRect.height - windowHeight) / 2,
-            width: windowWidth,
-            height: windowHeight
+            x: 0,
+            y: 0,
+            width: screen.frame.width,
+            height: 120
         )
         
-        window = FloatingWindow(contentRect: windowRect)
+        print("2. Creating window...")
+        window = NSWindow(
+            contentRect: windowRect,
+            styleMask: [.borderless],
+            backing: .buffered,
+            defer: false
+        )
+        print("3. Window created")
         
-        // Create HeightMapView
-        heightMapView = HeightMapView(frame: window.contentView!.bounds)
-        heightMapView.autoresizingMask = [.width, .height]
-        window.contentView?.addSubview(heightMapView)
+        window.level = .floating
+        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary]
+        window.isOpaque = false
+        window.backgroundColor = .clear
+        window.hasShadow = false
+        print("4. Window configured")
         
-        // Load Content
-        loadContent()
+        // Create dock view
+        print("5. Creating DockView...")
+        dockView = DockView()
+        print("6. DockView created, calling setup...")
+        dockView.setup()
+        print("7. Setup complete, setting frame...")
+        dockView.frame = window.contentView!.bounds
+        dockView.autoresizingMask = [.width, .height]
+        window.contentView?.addSubview(dockView)
+        print("8. DockView added to window")
         
+        // Load dock items
+        print("9. Fetching dock items...")
+        let items = IconManager.fetchDockItems()
+        print("10. Got \(items.count) items, updating view...")
+        dockView.updateItems(with: items)
+        print("11. Items updated")
+        
+        print("12. Making window key and ordering front...")
         window.makeKeyAndOrderFront(nil)
+        print("13. Activating app...")
         NSApp.activate(ignoringOtherApps: true)
-    }
-    
-    func loadContent() {
-        // 1. Try to capture Dock info
-        if let (dockImage, dockFrame) = DockCapturer.captureDock() {
-            print("Dock found. Frame: \(dockFrame)")
-            
-            // Position window over the Dock
-            if let screen = NSScreen.main {
-                let screenHeight = screen.frame.height
-                // Convert CGWindow coordinates (Top-Left) to NSWindow coordinates (Bottom-Left)
-                let newY = screenHeight - dockFrame.origin.y - dockFrame.height
-                let newFrame = NSRect(x: dockFrame.origin.x, y: newY, width: dockFrame.width, height: dockFrame.height)
-                
-                window.setFrame(newFrame, display: true)
-            }
-            
-            if let image = dockImage {
-                print("Dock image captured.")
-                heightMapView.update(with: image)
-            } else {
-                print("Dock image missing (permission denied). Using running apps.")
-                let items = IconManager.fetchDockItems()
-                heightMapView.update(with: items)
-            }
-        } else {
-            // 2. Fallback if Dock not found
-            print("Dock not found. Using default position at bottom of screen.")
-            if let screen = NSScreen.main {
-                let width: CGFloat = 800
-                let height: CGFloat = 150
-                let x = (screen.frame.width - width) / 2
-                let y: CGFloat = 20 // 20px from bottom
-                let frame = NSRect(x: x, y: y, width: width, height: height)
-                window.setFrame(frame, display: true)
-            }
-            
-            let items = IconManager.fetchDockItems()
-            heightMapView.update(with: items)
-        }
+        print("14. applicationDidFinishLaunching complete!")
     }
 }

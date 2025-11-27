@@ -1,7 +1,7 @@
 /Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/AppDelegate.swift
-/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockCapturer.swift
 /Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockItem.swift
-/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/FloatingWindow.swift
-/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/HeightMapView.swift
+/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockRenderer.swift
+/Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/DockView.swift
 /Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/IconManager.swift
 /Users/o29/dockerneo/DockerNeo/Sources/DockerNeo/main.swift
+/Users/o29/dockerneo/DockerNeo/.build/arm64-apple-macosx/debug/DockerNeo.build/DerivedSources/resource_bundle_accessor.swift
